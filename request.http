@@ -1,0 +1,28 @@
+###
+GET http://localhost:9000/api HTTP/1.1
+
+###
+POST http://localhost:9000/api/ HTTP/1.1
+Content-Type: application/json
+
+     {"Id": 4,
+    "Modelo": "SM-400",
+    "Temperatura": "0.02 °C",
+    "Fecha_Medicion": "15/08/21",
+    "Hora": "01:00:00"
+     } 
+###
+DELETE http://localhost:9000/api/1 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/4 HTTP/1.1
+Content-Type: application/json
+
+    { 
+    "Id": 4,
+    "Modelo": "SM-600",
+    "Temperatura": "0.02 °C",
+    "Fecha_Medicion": "15/08/21",
+    "Hora": "01:00:00"
+    } 
+ 
